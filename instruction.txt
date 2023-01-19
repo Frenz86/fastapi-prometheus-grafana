@@ -1,0 +1,13 @@
+docker-compose up -d
+
+## login grafana
+localhost:3000
+user:admin pass: pass@123
+
+## aggiungere a mano prometheus data source
+
+create a prometheus data source
+Add http://prometheus:9090 as prometheus server url instead of http://localhost:9090.
+
+go to http://localhost:3000/dashboards and select new > import > upload fastapi-dashboard.json
+
